@@ -1,0 +1,9 @@
+nav {
+	background-color: green;
+}
+
+.nav-link {
+	color: white !important;
+	font-weight: 500;
+	text-shadow: 1px 1px 1px black;
+}
