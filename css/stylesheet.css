@@ -12,8 +12,26 @@ nav {
 
 
 /* ========== Main Section ========== */
+.container-fluid {
+	background-color: white;
+	padding: 0;
+}
+
 h1, h2, h3 {
 	text-align: center;
+}
+
+section {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:  40px ;
+}
+
+div.bgcolor {
+	background-color: #E0FFDF;
+	padding: 0;
+	margin: 0;
 }
 
 section img {
@@ -61,7 +79,7 @@ button.learn-more:hover {
 }
 
 /* ========== Footer ========== */
-.container-fluid {
+.footer-bgcolor {
 	background-color: #5A5A5A;
 
 }
@@ -75,6 +93,7 @@ button.learn-more:hover {
 .footer a, .footer p {
 	text-decoration: none;
 	color: white;
+	background-color: #5A5A5A;
 }
 
 .social-media {
