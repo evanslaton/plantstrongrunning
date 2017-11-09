@@ -10,6 +10,10 @@ nav {
 	text-shadow: 1px 1px 1px black;
 }
 
+nav a:hover {
+	text-shadow: 2px 2px 5px black;
+}
+
 
 /* ========== Main Section ========== */
 .container-fluid {
