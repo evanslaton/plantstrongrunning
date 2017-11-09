@@ -132,14 +132,6 @@ i {
 
 }
 
-@media screen and (max-width: 575px) {
-
-	.margin-top-added-30px-too {
-		margin-top: 30px;
-	}
-
-}
-
 
 /* ========== H1, H2 Size Changes ========== */
 @media screen and (max-width: 474px) {
