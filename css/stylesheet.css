@@ -16,6 +16,10 @@ nav a:hover {
 
 
 /* ========== Main Section ========== */
+a {
+	text-decoration: none !important;
+}
+
 .container-fluid {
 	background-color: white;
 	padding: 0;
@@ -86,6 +90,16 @@ button.learn-more:hover {
 img.iin-img {
 	width: 100%;
 	height: auto;
+}
+
+figure {
+	background-color: white;
+	padding: 1px 1px 0 1px;
+}
+
+figcaption {
+	text-align: center;
+	color: black;
 }
 
 
