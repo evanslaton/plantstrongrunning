@@ -82,6 +82,13 @@ button.learn-more:hover {
 	cursor: pointer;
 }
 
+
+img.iin-img {
+	width: 100%;
+	height: auto;
+}
+
+
 /* ========== Footer ========== */
 .footer-bgcolor {
 	background-color: #5A5A5A;
