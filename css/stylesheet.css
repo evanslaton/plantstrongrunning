@@ -46,6 +46,11 @@ div.nav-links a:hover {
 /* ========== Main Section ========== */
 a {
 	text-decoration: none !important;
+	color: black;
+}
+
+a:hover {
+	color: black;
 }
 
 .container-fluid {
@@ -146,6 +151,7 @@ figure {
 figcaption {
 	text-align: center;
 	color: black;
+	font-size: .75em;
 }
 
 
@@ -190,6 +196,7 @@ i {
 }
 
 
+<<<<<<< HEAD
 /* ========== Style Unique to coaching_programs.html ========== */
 .coaching-program-title {
 	text-align: left;
@@ -200,6 +207,8 @@ i {
 }
 
 
+=======
+>>>>>>> 4cc67c07165bc924b15bc3bcca9b2a596495e6c7
 /* ========== Media Queries ========== */
 
 
