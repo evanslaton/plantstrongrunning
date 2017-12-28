@@ -1,6 +1,13 @@
+/*
+Matte - #414141
+Fresh - #CCDFCB
+Watermelon - #FF6A5C
+Teal - #056571
+*/
+
 /* ========== Nav Bar ========== */
 nav.navigation {
-	background-color: #138C2F;
+	background-color: #414141;
 	padding: 0;
 }
 
@@ -11,9 +18,7 @@ nav.navigation img {
 
 div.nav-links {
 	width: 100%;
-	background-color: #54585B;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	background-color: #FF6A5C;
 }
 
 div.nav-links ul {
@@ -25,17 +30,15 @@ div.nav-links ul {
 div.nav-links li {
 	list-style-type: none;
 	display: inline-block;
-	margin: 10px 3%;
+	margin: 5px 4%;
 }
 
 div.nav-links a {
 	text-decoration: none;
 	color: white;
-	padding: 5px;
-	font-family: "Passion One";
+	font-family: Abel;
 	font-size: 1.4em;
-	letter-spacing: .5px;	
-	text-shadow: 1px 1px 2px black;
+	text-shadow: 1px 1px 3px black;
 }
 
 div.nav-links a:hover {
@@ -44,6 +47,12 @@ div.nav-links a:hover {
 }
 
 /* ========== Main Section ========== */
+
+section {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 a {
 	text-decoration: none !important;
 	color: black;
@@ -60,11 +69,12 @@ a:hover {
 
 div.header {
 	margin: 0;
-	padding-top: 100px;
-	background-image: url(../img/banner.jpeg);
-	background-position: center middle;
+	padding-top: 90px;
+	background-image: url(../img/1.jpg);
+	background-position: -8px;
 	background-size: cover;
-	height: 400px;
+	background-repeat: no-repeat;
+	height: 300px;
 	color: white;
 	text-shadow: 1px 1px 1px black;
 }
@@ -72,6 +82,11 @@ div.header {
 
 h1, h2, h3 {
 	text-align: center;
+	font-family: Abel;
+}
+
+.note {
+	font-size: .75em;
 }
 
 section {
@@ -81,10 +96,30 @@ section {
 	padding:  40px ;
 }
 
-div.bgcolor {
-	background-color: #E0FFDF;
-	padding: 0;
-	margin: 0;
+.thematic-break {
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+.thematic-break-line {
+	position: absolute;
+	left: 10%;
+	top: 20px;
+	width: 80%;
+	border-bottom: 1px solid black;
+}
+
+.thematic-break-img-background {
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	padding: 0 10px;
+	z-index: 1;
+}
+
+.thematic-break img {
+	width: 50px;
 }
 
 .why-ps-img {
@@ -125,10 +160,17 @@ button.learn-more {
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: 500;
+	background-color: #FF6A5C;
+	border-color: #FF6A5C;
+	font-family: Abel;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px black;
 }
 
-button.learn-more:hover {
+button.learn-more:hover, button.learn-more:active {
 	cursor: pointer;
+	background-color: #E56155 !important;
+	border-color: #E56155 !important;
 }
 
 img.img-center {
@@ -140,12 +182,15 @@ img.img-center {
 
 img.iin-img {
 	width: 100%;
+
 	height: auto;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 figure {
 	background-color: white;
-	padding: 1px 1px 0 1px;
+	border-radius: 5px;
 }
 
 figcaption {
@@ -164,8 +209,9 @@ figcaption {
 
 /* ========== Footer ========== */
 .footer-bgcolor {
-	background-color: #5A5A5A;
-
+	background-color: #414141;
+	font-size: 1em;
+	font-family: Abel;
 }
 
 .footer {
@@ -177,9 +223,12 @@ figcaption {
 .footer a, .footer p {
 	text-decoration: none;
 	color: white;
-	background-color: #5A5A5A;
 }
 
+.footer .row {
+	margin-left: 0;
+	margin-right: 0;
+}
 .social-media {
 	padding: 0;
 }
@@ -196,7 +245,6 @@ i {
 }
 
 
-<<<<<<< HEAD
 /* ========== Style Unique to coaching_programs.html ========== */
 .coaching-program-title {
 	text-align: left;
@@ -207,8 +255,6 @@ i {
 }
 
 
-=======
->>>>>>> 4cc67c07165bc924b15bc3bcca9b2a596495e6c7
 /* ========== Media Queries ========== */
 
 
