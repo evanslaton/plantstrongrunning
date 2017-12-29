@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>Plant Strong Running</title>
 
 
-<!-- ========== Bootstrap ========== -->
+  <!-- ========== Bootstrap ========== -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
 
-<!-- Swiper -->
+  <!-- ========== jQuery ========== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <!-- ========== Swiper ========== -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
+  <script src="js/swiper.js"></script>
 
-
-<!-- ========== Font Awesome ========== -->
+  <!-- ========== Font Awesome ========== -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<!-- ========== Google Fonts ========== -->
+  <!-- ========== Google Fonts ========== -->
   <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
-<!-- ========== Custom CSS ========== -->
+
+  <!-- ========== Custom CSS ========== -->
 	<link  rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
 
-<!-- ========== Google Analytics ========== -->
+  <!-- ========== Custom JS ========== -->
+  <script src="js/scripts.js"></script>
+
+
+  <!-- ========== Google Analytics ========== -->
 
 
 
@@ -36,11 +48,13 @@
 
 <!-- ========== Nav Bar ========== -->
 <nav class="navigation">
-  <img src="img/logo-white-transparent.png" alt="Plant Strong Running logo" width="300"/>
+  <img src="img/logo-white-transparent.png" alt="Plant Strong Running logo" />
 
   <div class="nav-links">
-    <ul>
-      <li><a href="#">Home</a></li>
+    <div id="burger-menu" class="burger-menu-border"><i class="fa fa-bars"></i></div>
+
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Coaching Plans</a></li>
       <li><a href="#">Blog</a></li>
@@ -70,7 +84,7 @@
   		</div>
 
       <div class="col-lg-6 col-md-12 col-sm-12 margin-top-20px">
-        <p>If there were a food filled with nutrients, vitamins, minerals, and everything else we needed to live a vibrant, healthy and happy lives would you commit to eating only that? What if it was full of flavor and could be prepared in multiple ways so that you never got sick of it? Growing up many of us were taught to clean our plates and that we need to eat meat for protein, but if you begin to learn about diet and nutrition you begin to learn that these lessons aren’t fact; the lesson you learn is to eat more vegetables.</p>
+        <p class="desktop">If there were a food filled with nutrients, vitamins, minerals, and everything else we needed to live a vibrant, healthy and happy lives would you commit to eating only that? What if it was full of flavor and could be prepared in multiple ways so that you never got sick of it? Growing up many of us were taught to clean our plates and that we need to eat meat for protein, but if you begin to learn about diet and nutrition you begin to learn that these lessons aren’t fact; the lesson you learn is to eat more vegetables.</p>
 
         <p>As health and wellness become your focus and goal, eating more plants must be priority. Eating well will support you in becoming the strongest and best self you can be. Whatever your reason for wanting to eat a plant based diet- for health, animals, or the environment- eating plant strong is rewarding and invigorating. With the right resources, recipes, and food hacks, a plant-based or vegan diet is exciting as you discover new foods and recreate old favorites. As your coach, in running and in life, I’ll help you create your plant-strong lifestyle in the most delicious, stress-free, and healthy way.</p>
   		</div>
@@ -81,7 +95,7 @@
   <!-- ========== Thematic Break ========== -->
   <div class="thematic-break">
     <div class="thematic-break-line"></div>
-    <div class="thematic-break-img-background">
+    <div class="thematic-break-background">
       <img src="img/kale.jpg" />
       <img src="img/kale.jpg" />
       <img src="img/kale.jpg" />
@@ -111,7 +125,7 @@
   <!-- ========== Thematic Break ========== -->
   <div class="thematic-break">
     <div class="thematic-break-line"></div>
-    <div class="thematic-break-img-background">
+    <div class="thematic-break-background">
       <img src="img/kale.jpg" />
       <img src="img/kale.jpg" />
       <img src="img/kale.jpg" />
@@ -132,15 +146,20 @@
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
-                <a href="assembly.html"><img class="img-fluid full-width" src="img/banner.jpeg" alt="" /></a>
+                <figure>
+                  <img class="img-fluid full-width" src="img/banner.jpeg" alt="" />
+                  <figcaption>
+                    Health History
+                  </figcaption>
+                </figure>
               </div>
 
               <div class="swiper-slide">
-                <a href="furniture.html"><img class="img-fluid full-width" src="img/banner.jpeg" alt="" /></a>
+                <img class="img-fluid full-width" src="img/banner.jpeg" alt="" />
               </div>
 
               <div class="swiper-slide">
-                <a href=""><img class="img-fluid full-width" src="img/banner.jpeg" alt="" /></a>
+                <img class="img-fluid full-width" src="img/banner.jpeg" alt="" />
               </div>
 
               <div class="swiper-slide">
@@ -169,7 +188,7 @@
   <!-- ========== Thematic Break ========== -->
   <div class="thematic-break">
     <div class="thematic-break-line"></div>
-    <div class="thematic-break-img-background">
+    <div class="thematic-break-background">
       <img src="img/kale.jpg" />
       <img src="img/kale.jpg" />
       <img src="img/kale.jpg" />
@@ -178,7 +197,7 @@
 
 
   <!-- ========== IIN ========== -->
-  <div class="bgcolor">
+  <div class="bgcolor iin">
     <section class="bgcolor">
       <h2>Institute for Integrative Nutrition</h2>
       <p class="margin-top-20px text-center">Passionate about health, wellness, and helping others? Integrative Nutrition fuels your passion and helps you turn it into a career that you will love. Contact me or click on the images for more information!</p>
@@ -261,20 +280,6 @@
 
   </footer>
 </div>
-
-<!-- Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-
-<!-- Swiper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.esm.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.esm.bundle.js"></script>
-<script src="../dist/js/swiper.min.js"></script>
-<script src="js/swiper.js"></script>
 
 </body>
 </html>

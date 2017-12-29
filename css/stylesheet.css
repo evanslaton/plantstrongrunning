@@ -9,28 +9,66 @@ Teal - #056571
 nav.navigation {
 	background-color: #414141;
 	padding: 0;
+	text-align: center;
+	position: relative;
 }
 
 nav.navigation img {
 	display: block;
 	margin: 0 auto;
+	width: 300px;
 }
 
 div.nav-links {
 	width: 100%;
 	background-color: #FF6A5C;
+	padding: 8px 0;
 }
+
+.burger-menu-border {
+	display: inline-block;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 4px 8px;
+	box-shadow: 1px 1px 3px black;
+	cursor: pointer;
+}
+
+.burger-menu-border:hover {
+	box-shadow: 2px 2px 3px black;
+}
+
+.burger-menu-border:active {
+	box-shadow: 1px 1px 3px black;
+}
+
+nav i.fa-bars {
+	display: block;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+}
+
 
 div.nav-links ul {
-	text-align: center;
-	padding: 0;
+	padding: 10px 0 0;
 	margin: 0;
+	background-color: #FF6A5C;
+	position: absolute;
+	top: 180px;
+	left: 0;
+	right: 0;
+	display: none;
 }
-
+/*
+div.nav-links li {
+	display: inline-block;
+	margin: 0 4%;
+}
+*/
 div.nav-links li {
 	list-style-type: none;
-	display: inline-block;
-	margin: 5px 4%;
+	padding: 2px 0;
 }
 
 div.nav-links a {
@@ -43,16 +81,14 @@ div.nav-links a {
 
 div.nav-links a:hover {
 	color: white;
-	text-shadow: 2px 2px 5px black;
+	text-shadow: 2px 2px 3px black;
+}
+
+div.nav-links a:active {
+	text-shadow: 1px 1px 3px black;
 }
 
 /* ========== Main Section ========== */
-
-section {
-	margin-left: 0;
-	margin-right: 0;
-}
-
 a {
 	text-decoration: none !important;
 	color: black;
@@ -62,31 +98,9 @@ a:hover {
 	color: black;
 }
 
-.container-fluid {
-	background-color: white;
-	padding: 0;
-}
-
-div.header {
-	margin: 0;
-	padding-top: 90px;
-	background-image: url(../img/1.jpg);
-	background-position: -8px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 300px;
-	color: white;
-	text-shadow: 1px 1px 1px black;
-}
-
-
 h1, h2, h3 {
 	text-align: center;
 	font-family: Abel;
-}
-
-.note {
-	font-size: .75em;
 }
 
 section {
@@ -94,37 +108,6 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	padding:  40px ;
-}
-
-.thematic-break {
-	text-align: center;
-	position: relative;
-	width: 100%;
-}
-
-.thematic-break-line {
-	position: absolute;
-	left: 10%;
-	top: 20px;
-	width: 80%;
-	border-bottom: 1px solid black;
-}
-
-.thematic-break-img-background {
-	position: relative;
-	display: inline-block;
-	background-color: white;
-	padding: 0 10px;
-	z-index: 1;
-}
-
-.thematic-break img {
-	width: 50px;
-}
-
-.why-ps-img {
-	width: 100%;
-	height: auto;
 }
 
 .margin-top-20px {
@@ -145,6 +128,58 @@ section {
 
 .margin-top-60px {
 	margin-top: 60px;
+}
+
+.container-fluid {
+	background-color: white;
+	padding: 0;
+}
+
+.thematic-break {
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+.thematic-break-line {
+	position: absolute;
+	left: 10%;
+	top: 20px;
+	width: 80%;
+	border-bottom: 1px solid black;
+}
+
+.thematic-break-background {
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	padding: 0 10px;
+	z-index: 1;
+}
+
+.thematic-break img {
+	width: 50px;
+}
+
+div.header {
+	margin: 0;
+	padding-top: 100px;
+	background-image: url(../img/1.jpg);
+	background-position: -8px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+.why-ps-img {
+	width: 100%;
+	height: auto;
+}
+
+.desktop {
+	display: none;
 }
 
 div.button {
@@ -182,21 +217,22 @@ img.img-center {
 
 img.iin-img {
 	width: 100%;
-
 	height: auto;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
 }
 
-figure {
-	background-color: white;
-	border-radius: 5px;
+.iin figure {
+	background-color: #056571;
+	border: 1px solid #056571;
+	border-radius: 6px;
+	overflow: hidden;
 }
 
-figcaption {
+.iin figcaption {
 	text-align: center;
-	color: black;
-	font-size: .75em;
+	color: white;
+	padding: 3px 0;
+	font-size: 1em;
+	text-shadow: 1px 1px 1px black;
 }
 
 
@@ -223,6 +259,7 @@ figcaption {
 .footer a, .footer p {
 	text-decoration: none;
 	color: white;
+	text-shadow: 1px 1px 1px black;
 }
 
 .footer .row {
@@ -256,9 +293,22 @@ i {
 
 
 /* ========== Media Queries ========== */
+/*
+@media screen and (max-width: 599px) {
+	nav ul {
+		display: none;
+	}
+}
+*/
 
 
 /* ========== IMG Changes ========== */
+@media screen and (max-width: 329px) {
+	nav img {
+		width: 100% !important;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.display-none {
 		display: none;
