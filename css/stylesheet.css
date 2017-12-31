@@ -5,85 +5,6 @@ Watermelon - #FF6A5C
 Teal - #056571
 */
 
-/* ========== Nav Bar ========== */
-nav.navigation {
-	background-color: #414141;
-	padding: 0;
-	text-align: center;
-	position: relative;
-	height: 184px;
-}
-
-nav.navigation img {
-	display: block;
-	margin: 0 auto;
-	width: 300px;
-}
-
-div.nav-links {
-	width: 100%;
-	background-color: #FF6A5C;
-	padding: 8px 0;
-	position: absolute;
-	bottom: 0;
-}
-
-.burger-menu-border {
-	display: inline-block;
-	border: 2px solid white;
-	border-radius: 5px;
-	padding: 4px 8px;
-	box-shadow: 1px 1px 3px black;
-	cursor: pointer;
-}
-
-.burger-menu-border:hover {
-	box-shadow: 2px 2px 3px black;
-}
-
-.burger-menu-border:active {
-	box-shadow: 1px 1px 3px black;
-}
-
-nav i.fa-bars {
-	display: block;
-	font-size: 1.5em;
-	text-align: center;
-	text-shadow: 1px 1px 1px black;
-}
-
-div.nav-links ul {
-	padding: 10px 0 15px;
-	margin: 0;
-	background-color: #FF6A5C;
-	position: absolute;
-	top: 50px;
-	left: 0;
-	right: 0;
-	display: none;
-}
-
-div.nav-links li {
-	list-style-type: none;
-	padding: 2px 0;
-}
-
-div.nav-links a {
-	text-decoration: none;
-	color: white;
-	font-family: Abel;
-	font-size: 1.4em;
-	text-shadow: 1px 1px 3px black;
-}
-
-div.nav-links a:hover {
-	color: white;
-	text-shadow: 2px 2px 3px black;
-}
-
-div.nav-links a:active {
-	text-shadow: 1px 1px 3px black;
-}
 
 /* ========== Main Section ========== */
 a {
@@ -132,6 +53,10 @@ section {
 	padding: 0;
 }
 
+.desktop {
+	display: none;
+}
+
 .thematic-break {
 	text-align: center;
 	position: relative;
@@ -162,7 +87,7 @@ div.header {
 	margin: 0;
 	padding-top: 100px;
 	background-image: url(../img/1.jpg);
-	background-position: -8px;
+	background-position: -40px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 300px;
@@ -175,8 +100,8 @@ div.header {
 	height: auto;
 }
 
-.desktop {
-	display: none;
+.index-steph {
+	border-radius: 50%;
 }
 
 div.button {
@@ -212,19 +137,19 @@ img.img-center {
 	margin-right: auto;
 }
 
-img.iin-img {
-	width: 100%;
-	height: auto;
-}
-
-.iin figure {
+.iin-figure {
 	background-color: #056571;
 	border: 1px solid #056571;
 	border-radius: 6px;
 	overflow: hidden;
 }
 
-.iin figcaption {
+img.iin-img {
+	width: 100%;
+	height: auto;
+}
+
+.iin-figure figcaption {
 	text-align: center;
 	color: white;
 	padding: 3px 0;
@@ -240,45 +165,6 @@ img.iin-img {
 }
 
 
-/* ========== Footer ========== */
-.footer-bgcolor {
-	background-color: #414141;
-	font-size: 1em;
-	font-family: Abel;
-}
-
-.footer {
-	padding-top: 20px;
-	text-align: center;
-	line-height: .35em;
-}
-
-.footer a, .footer p {
-	text-decoration: none;
-	color: white;
-	text-shadow: 1px 1px 1px black;
-}
-
-.footer .row {
-	margin-left: 0;
-	margin-right: 0;
-}
-.social-media {
-	padding: 0;
-}
-
-.social-media li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 0;
-	margin: 0 15px;
-}
-
-i {
-	color: white;
-}
-
-
 /* ========== Style Unique to coaching_programs.html ========== */
 .coaching-program-title {
 	text-align: left;
@@ -290,25 +176,7 @@ i {
 
 
 /* ========== Media Queries ========== */
-/*
-@media screen and (max-width: 599px) {
-	nav ul {
-		display: none;
-	}
-}
-*/
 
-
-/* ========== IMG Changes ========== */
-@media screen and (max-width: 318px) {
-	nav {
-		padding-top: 4px !important;
-	}
-
-	nav img {
-		width: 100% !important;
-	}
-}
 
 @media screen and (max-width: 991px) {
 	.display-none {
@@ -361,31 +229,5 @@ i {
 
 	h2.header-subheading {
 		font-size: 1em;
-	}
-}
-
-
-/* ========== Social Media Icon Changes ========== */
-@media screen and (max-width: 835px) {
-	.social-media li {
-	list-style-type: none;
-	display: inline-block;
-	margin: 0 5px;
-	}
-}
-
-@media screen and (max-width: 595px) {
-	.social-media li {
-	list-style-type: none;
-	display: inline-block;
-	margin: 0 2px;
-	}
-}
-
-@media screen and (max-width: 575px) {
-	.social-media li {
-	list-style-type: none;
-	display: inline-block;
-	margin: 0 15px;
 	}
 }

@@ -1,0 +1,68 @@
+/* ========== Footer ========== */
+.footer-bgcolor {
+	background-color: #414141 !important;
+	font-size: 1em;
+	font-family: Abel;
+}
+
+.footer {
+	padding-top: 20px !important;
+	text-align: center;
+	line-height: .35em;
+}
+
+.footer .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.footer a, .footer p {
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+.footer a:hover {
+	color: white;
+}
+
+.social-media {
+	padding: 0;
+}
+
+.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0 15px;
+}
+
+i {
+	color: white;
+}
+
+
+/* ========== Social Media Icon Changes ========== */
+@media screen and (max-width: 575px) {
+	.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 15px;
+	}
+}
+
+@media screen and (max-width: 595px) {
+	.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 2px;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
+	}
+}
