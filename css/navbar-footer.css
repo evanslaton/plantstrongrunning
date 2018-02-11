@@ -1,0 +1,157 @@
+/* ========== Nav Bar ========== */
+nav.navigation {
+	background-color: #414141;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	height: 184px;
+}
+
+div.nav-links {
+	width: 100%;
+	background-color: #FF6A5C;
+	padding: 8px 0;
+	position: absolute;
+	bottom: 0;
+}
+
+nav i {
+	color: #FFF;
+}
+
+.burger-menu-border {
+	display: inline-block;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	padding: 4px 8px;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+	margin-bottom: 2px;
+}
+
+.burger-menu-border:hover {
+	box-shadow: 2px 2px 3px #000;
+}
+
+.burger-menu-border:active {
+	box-shadow: 1px 1px 3px #000;
+}
+
+nav i.fa-bars {
+	display: block;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+}
+
+div.nav-links ul {
+	padding: 10px 0 15px;
+	margin: 0;
+	background-color: #FF6A5C;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+div.nav-links li {
+	list-style-type: none;
+	padding: 2px 0;
+}
+
+div.nav-links a {
+	text-decoration: none;
+	color: white;
+	font-family: Abel;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 3px #000;
+}
+
+div.nav-links a:hover {
+	color: white;
+	text-shadow: 2px 2px 3px #000;
+}
+
+div.nav-links a:active {
+	text-shadow: 1px 1px 3px #000;
+}
+
+
+/* ========== Footer ========== */
+.footer-bgcolor {
+	background-color: #414141 !important;
+	font-size: 1em;
+	font-family: Abel;
+}
+
+.footer {
+	padding-top: 20px !important;
+	text-align: center;
+	line-height: .35em;
+}
+
+.footer .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.footer a, .footer p {
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.footer a:hover {
+	color: #FFF;
+}
+
+footer .social-media {
+	padding: 0;
+}
+
+footer .social-media li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0 15px;
+}
+
+footer .social-media i {
+	color: #FFF;
+}
+
+
+/* ========== Navbar Media Queries ========== */
+
+@media screen and (min-width: 318px) {
+	nav img {
+		width: 300px !important;
+	}
+}
+
+
+/* ========== Footer Social Media Icon Changes ========== */
+@media screen and (max-width: 575px) {
+	.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 15px;
+	}
+}
+
+@media screen and (max-width: 595px) {
+	.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 2px;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	.social-media li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
+	}
+}
