@@ -53,6 +53,7 @@ div.nav-links ul {
 	left: 0;
 	right: 0;
 	display: none;
+	z-index: 1;
 }
 
 div.nav-links li {
