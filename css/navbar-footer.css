@@ -141,6 +141,26 @@ footer .social-media i {
 	}
 }
 
+@media screen and (min-width: 625px) {
+	.burger-menu-border {
+		position: absolute;
+		display: none;
+	}
+
+	div.nav-links ul {
+		display: block;
+		top: -41px;
+		padding: 12px 0 0;
+	}
+
+	div.nav-links ul li {
+		display: inline-block;
+		height: 40.406px;
+		padding: 0;
+		margin: 0 20px;
+	}
+}
+
 @media screen and (max-width: 595px) {
 	.social-media li {
 	list-style-type: none;

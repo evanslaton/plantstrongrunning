@@ -112,32 +112,27 @@ div.learn-more:hover, div.learn-more:active {
 div.header {
 	height: 300px;
 	width: 100%;
-	margin: 0 0 430px;
 	padding: 10px 15px;
+	margin-bottom: 20px;
 	background-color: #000;
 	background-image: url(../img/stephslaton_41.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: -105px center;
-	position: relative;
 }
 
 header.homepage-header {
 	width: 100%;
 	padding: 0 15px;
-	position: absolute;
-	bottom: -395px;
-	left: 0;
-	right: 0;
 }
 
-div.header h1 {
+header.homepage-header h1 {
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 24px;
 }
 
-div.header h2 {
-	font-size: 20px;
+header.homepage-header h2 {
+	font-size: 18px;
 	margin-bottom: 15px;
 }
 
@@ -147,7 +142,11 @@ header em {
 
 form.header-form {
 	position: relative;
-
+	margin-bottom: 40px;
+	width: 100%;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input.newsletterEmail {
@@ -284,23 +283,93 @@ img.iin-img {
 
 
 /* ========== Media Queries ========== */
-
-
-@media screen and (max-width: 991px) {
-	.display-none {
-		display: none;
-	}
-
-	.margin-top-added-40px {
-		margin-top: 40px;
+@media screen and (min-width: 305px) {
+	div.header {
+		height: 300px;
+		background-position: center center;
 	}
 }
 
-@media screen and (max-width: 575px) {
-	.margin-top-added-40px-too {
+@media screen and (min-width: 350px) {
+	form.header-form {
 		margin-top: 40px;
+		margin-bottom: 45px;
+	}
+
+	header.homepage-header h1 {
+		font-size: 32px;
+	}
+
+	header.homepage-header h2 {
+		font-size: 24px;
+	}
+
+	p.first-text {
+		margin-top: 20px;
+	}
+
+	div.button {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	div.why-plant-strong h2, div.coach-steph h2 {
+		margin: 10px 0 25px;
+	}
+
+	div.testimonials {
+		padding: 45px 35px;
+		margin-top: 55px;
+		margin-bottom: 35px;
+	}
+
+	div.homepage-programs h2 {
+		margin: 15px 0 30px;
+	}
+
+	div.homepage-programs div.button {
+		margin-bottom: 50px;
+	}
+
+	div.homepage-iin h2 {
+		margin-top: 15px;
 	}
 }
 
+@media screen and (min-width: 450px) {
+	header.homepage-header h1 {
+		font-size: 36px;
+	}
 
+	header.homepage-header h2 {
+		font-size: 28px;
+	}
 
+	p.first-text {
+		margin-top: 30px;
+	}
+
+	header.homepage-header p, div.why-plant-strong p, div.coach-steph p, div.homepage-programs p, div.homepage-iin p {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+	div.swiper-slide p {
+		padding: 5px 0;
+	}
+}
+
+@media screen and (min-width: 535px) {
+	div.header {
+		height: 400px;
+		background-position: center center;
+	}
+
+	header.homepage-header h1 {
+		font-size: 42px;
+	}
+
+	header.homepage-header h2 {
+		font-size: 34px;
+	}	
+}
