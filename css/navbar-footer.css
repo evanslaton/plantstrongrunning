@@ -23,10 +23,10 @@ nav i {
 	display: inline-block;
 	border: 2px solid #FFF;
 	border-radius: 5px;
-	padding: 4px 8px;
+	padding: 4px 10px;
 	box-shadow: 1px 1px 3px #000;
 	cursor: pointer;
-	margin-bottom: 2px;
+	margin-top: 3px;
 }
 
 .burger-menu-border:hover {
@@ -37,11 +37,11 @@ nav i {
 	box-shadow: 1px 1px 3px #000;
 }
 
-nav i.fa-bars {
+.fa-bars {
 	display: block;
-	font-size: 1.5em;
+	font-size: 20px;
 	text-align: center;
-	text-shadow: 1px 1px 1px #000;
+	color: #FFF;
 }
 
 div.nav-links ul {

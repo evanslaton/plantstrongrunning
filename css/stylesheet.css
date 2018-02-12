@@ -54,6 +54,33 @@ h1, h2, h3 {
 	display: none;
 }
 
+div.button {
+	width: 100%;
+	padding: 0 15px;
+}
+
+div.button a {
+	text-decoration: none;
+}
+
+div.learn-more {
+	max-width: 300px;
+	padding-top: 6px;
+	height: 40px;
+	background-color: #414141;
+	border: 1px solid #414141;
+	color: #FFF;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.learn-more:hover, div.learn-more:active {
+	cursor: pointer;
+	background-color: #414141;
+	color: #FFF;
+}
+
 .thematic-break {
 	text-align: center;
 	position: relative;
@@ -71,7 +98,7 @@ h1, h2, h3 {
 .thematic-break-background {
 	position: relative;
 	display: inline-block;
-	background-color: white;
+	background-color: transparent;
 	padding: 0 10px;
 	z-index: 1;
 }
@@ -85,7 +112,7 @@ h1, h2, h3 {
 div.header {
 	height: 300px;
 	width: 100%;
-	margin: 0 0 400px;
+	margin: 0 0 430px;
 	padding: 10px 15px;
 	background-color: #000;
 	background-image: url(../img/stephslaton_41.jpg);
@@ -99,7 +126,7 @@ header.homepage-header {
 	width: 100%;
 	padding: 0 15px;
 	position: absolute;
-	bottom: -375px;
+	bottom: -395px;
 	left: 0;
 	right: 0;
 }
@@ -153,6 +180,8 @@ input.newsletterSubmit:hover {
 /* ========== Home Page Plant Strong Running ========== */
 div.why-plant-strong {
 	padding-top: 30px;
+	padding-bottom: 40px;
+	background-color: #F2F2F2;
 }
 
 div.why-plant-strong h2 {
@@ -167,7 +196,7 @@ div.why-plant-strong p {
 
 /* ========== Home Page Coach Stephanie ========== */
 div.coach-steph  {
-	padding-top: 40px;	
+	padding-top: 30px;	
 }
 
 div.coach-steph p {
@@ -176,50 +205,54 @@ div.coach-steph p {
 }
 
 
+/* ========== Home Page Testimonials ========== */
+div.testimonials {
+	padding: 20px 15px;
+	background-color: #F2F2F2;
+}
+
+p.testimonial {
+	font-style: italic;
+}
+
+p.test-name {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+hr.test-hr {
+	border-bottom: 1px solid #414141;
+	width: 90%;
+}
 
 
-
-
-
-
-
-
-
-div.button {
-	width: 100%;
+/* ========== Home Page Coaching Programs ========== */
+.homepage-programs p {
 	padding: 0 15px;
 }
 
-div.button a {
-	text-decoration: none;
+.swiper-slide {
+	border: 1px solid grey;
 }
 
-div.learn-more {
-	max-width: 300px;
-	padding-top: 6px;
-	height: 40px;
-	background-color: #414141;
-	border: 1px solid #414141;
-	color: #FFF;
-	border-radius: 5px;
+.swiper-container img {
+	height: 170px;
+	overflow: hidden;
 }
 
-div.learn-more:hover, div.learn-more:active {
-	cursor: pointer;
-	background-color: #414141;
-	color: #FFF;
+.swiper-container p {
+	padding: 5px 0;
+	text-transform: uppercase;
+	margin-bottom: 0;
 }
 
 
-
-
-
-
-
-
-
-
-
+/* ========== Home Page IIN ========== */
+div.homepage-iin {
+	background-color: #F2F2F2;
+	margin-top: 40px;
+	padding: 25px 15px 40px;
+}
 
 img.img-center {
 	display: block;
