@@ -235,17 +235,15 @@ hr.test-hr {
 	border: 1px solid grey;
 }
 
-.swiper-container img {
-	height: 170px;
-	overflow: hidden;
-}
-
 .swiper-container p {
 	padding: 5px 0;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
 
+.full-width {
+	width: 100%;
+}
 
 /* ========== Home Page IIN ========== */
 div.homepage-iin {
