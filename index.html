@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Plant Strong Running</title>
-
+	<title>Plant Strong Running | Hollistic Health and Wellness</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
   <!-- ========== Bootstrap ========== -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -59,7 +60,7 @@
     <ul id="nav-links">
       <a href="index.html"><li>Home</li></a>
       <a href="#"><li>About</li></a>
-      <a href="#"><li>Coaching Plans</li></a>
+      <a href="#"><li>Coaching Programs</li></a>
       <a href="#"><li>Blog</li></a>
       <a href="#"><li>Contact</li></a>      
     </ul>
@@ -78,14 +79,22 @@
     <h2>Eat Good. Feel Good. Look Good.</h2>
     <p class="first-text">Are you ready to eat, feel, and look your best? Let me walk you through the ambiguity of healthy eating and show you how great life can be when you are <em>plant strong</em>.</p>
 
-    <p>Not sure how to get started? Sign up for my FREE monthly newsletter below.</p>
-    <form class="header-form">
-      <input id="emailNewsletter" class="newsletterEmail" type="text" name="emailNewsletter" placeholder="Email"/>
-      <input id="submitForNewsletter" class="newsletterSubmit" type="submit" />
-    </form>
+    <div class="header-buttons desktop">
+      <a class="header-links get-started" href="#">
+          <div><p>Get Started</p></div>
+      </a>
+
+      <a class="header-links contact-me" href="#">    
+          <div><p>Contact Me</p></div>  
+      </a>
+    </div>
   </header>
 
-
+  <p class="sign-up">Not sure where to start? Sign up for my FREE monthly newsletter below.</p>
+  <form class="header-form">
+    <input id="emailNewsletter" class="newsletterEmail" type="text" name="emailNewsletter" placeholder="Email"/>
+    <input id="submitForNewsletter" class="newsletterSubmit" type="submit" />
+  </form>
 
 
   <!--   ========== Why Plant Strong? ========== -->
@@ -108,6 +117,47 @@
         </div>
       </a>
     </div>
+
+    <div class="container homepage-blogs desktop">
+      <div class="row blog-row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3>Where's The Protein?</h3>
+          <img class="img-fluid" src="img/blog/where-do-you-get-your-protein.jpeg" alt="Image of a question mark" />
+          <p>This is most often the first question you will get when anyone finds out you don’t eat meat. Forget high blood pressure, obesity… </p>
+          <p class="read-more text-center">
+            <a href="#">
+            Read More
+              <i class="fas fa-angle-double-right fa-fw" data-fa-transform="down-1"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3>Eat The Rainbow</h3>
+          <img id="img" class="img-fluid" src="img/blog/eat-the-rainbow.jpeg" alt="Image of a question mark" />
+          <p>Eating a rainbow illustrates that we can learn about our food simply by looking at it. The rainbow picture clearly takes out the science…</p>
+          <p class="read-more text-center">
+            <a href="#">
+            Read More
+              <i class="fas fa-angle-double-right fa-fw" data-fa-transform="down-1"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3>Doctor Recommended</h3>
+          <img class="img-fluid" src="img/blog/doctors-recommendation.jpeg" alt="Image of a question mark" />
+          <p>Something we probably have all learned from our doctors each time we have a visit: Eat more fruits and vegetables. The blanket…</p>
+          <p class="read-more text-center">
+            <a href="#">
+            Read More
+              <i class="fas fa-angle-double-right fa-fw" data-fa-transform="down-1"></i>
+            </a>
+          </p>     
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
@@ -124,18 +174,34 @@
 
   <!-- ========== Coach Stephanie ========== -->
   <div class="coach-steph">
-    <h2 class="text-center">Coach Stephanie</h2>
+    <h2 class="text-center mobile">Coach Stephanie</h2>
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 margin-top-10px">
+      <div class="col-lg-6 col-md-6 col-sm-12 margin-top-10px mobile">
         <img class="img-fluid index-steph img-center" src="img/stephslaton_07.jpg" alt="#">
+      </div>
+
+      <div class="col-lg-6 col-md-6 order-2 col-sm-12 margin-top-10px desktop">
+        <!-- <img class="img-fluid index-steph img-center" src="img/stephslaton_50.jpg" alt="#"> -->
       </div>
              
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <p class="first-text margin-top-10px">As a Certified Holistic Health and Marathon Running Coach I provide ongoing one-on-one programs that focus on working <em>with</em> you to make sustainable lifestyle changes that will get you back the energy and confidence you desire.</p>
+
+        <div class="background">
+          <h2 class="text-center desktop">Coach Stephanie</h2>        
+          <p class="first-text margin-top-10px">As a Certified Holistic Health and Marathon Running Coach I provide ongoing one-on-one programs that focus on working <em>with</em> you to make sustainable lifestyle changes that will get you back the energy and confidence you desire.</p>
+
+          <div class="button desktop">
+            <a href="#">
+              <div class="margin-top-20px learn-more text-center">
+                <p>Learn More</p>
+              </div>
+            </a>
+          </div>          
+        </div>
       </div>
     </div>
 
-    <div class="button">
+    <div class="button mobile">
       <a href="#">
         <div class="margin-top-20px learn-more text-center">
           <p>Learn More</p>
@@ -213,7 +279,7 @@
       </div>
     </div>
 
-    <p class="first-text margin-top-10px text-center">Either in-person or remotely, with my fully customizable programs I'll support you each step on your journey to a healthier, happier, and plant-strong self.</p>
+    <p class="first-text margin-top-10px text-center">Either in-person or remotely, your personalized program will radically improve your health and happiness. Together, we will explore concerns specific to you and your body and discover the tools you need for a lifetime of balance.</p>
 
     <div class="button">
       <a href="#">

@@ -14,6 +14,7 @@ a {
 
 a:hover {
 	color: black;
+	cursor: pointer;
 }
 
 h1, h2, h3 {
@@ -81,6 +82,10 @@ div.learn-more:hover, div.learn-more:active {
 	color: #FFF;
 }
 
+.desktop {
+	display: none;
+}
+
 .thematic-break {
 	text-align: center;
 	position: relative;
@@ -110,6 +115,7 @@ div.learn-more:hover, div.learn-more:active {
 
 /* ========== Home Page Header ========== */
 div.header {
+	position: relative;
 	height: 300px;
 	width: 100%;
 	padding: 10px 15px;
@@ -138,6 +144,55 @@ header.homepage-header h2 {
 
 header em {
 	text-transform: uppercase;
+}
+
+header .header-buttons {
+	width: 300px;
+	margin: 20px auto;
+	overflow: auto;
+	padding: 0 4px 10px;
+}
+
+header a.header-links {
+	display: inline-block;
+	border: 1px solid #414141;
+	border-radius: 5px;
+	background-color: transparent;
+	background-color: #414141;
+	text-decoration: none;
+}
+
+a.header-links div {
+	border-radius: 5px;
+}
+
+a.header-links div:hover {
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+}
+
+a.header-links div:active {
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+header .get-started {
+	float: left;
+}
+
+header .contact-me {
+	float: right;
+}
+
+header a.header-links p {
+	margin: 0;
+	padding: 5px 25px;
+	color: #FFF;
+}
+
+p.sign-up {
+	clear: both;
+	padding: 0 15px;
 }
 
 form.header-form {
@@ -190,6 +245,27 @@ div.why-plant-strong h2 {
 div.why-plant-strong p {
 	margin-bottom: 0;
 	padding: 0 15px;
+}
+
+div.why-plant-strong .blog-row {
+	margin-top: 50px;
+}
+
+div.why-plant-strong h3 {
+	font-size: 25px;
+}
+
+div.why-plant-strong div.homepage-blogs img {
+	border: 1px solid #414141;
+}
+
+div.why-plant-strong div.homepage-blogs p {
+	padding: 5px;
+}
+
+p.read-more a {
+	font-style: italic;
+	text-decoration: none;
 }
 
 
@@ -292,7 +368,7 @@ img.iin-img {
 
 @media screen and (min-width: 350px) {
 	form.header-form {
-		margin-top: 40px;
+		margin-top: 20px;
 		margin-bottom: 45px;
 	}
 
@@ -304,6 +380,11 @@ img.iin-img {
 		font-size: 24px;
 	}
 
+	p.sign-up {
+		padding: 0 15px;
+		text-align: center;
+	}	
+	
 	p.first-text {
 		margin-top: 20px;
 	}
@@ -354,6 +435,10 @@ img.iin-img {
 		padding-left: 35px;
 	}
 
+	p.sign-up {
+		padding: 0 50px;
+	}	
+
 	div.swiper-slide p {
 		padding: 5px 0;
 	}
@@ -373,3 +458,76 @@ img.iin-img {
 		font-size: 34px;
 	}	
 }
+
+@media screen and (min-width: 768px) {
+	div.header {
+		height: 500px;
+		background-image: url(../img/stephslaton_29.jpg);
+	}
+
+	header.homepage-header {
+		position: absolute;
+		top: 290px;
+		left: 20px;
+		width: 50%;
+	}
+
+	header.homepage-header h1 {
+		font-size: 32px;
+	}
+
+	header.homepage-header h2 {
+		font-size: 24px;
+	}	
+
+	header.homepage-header p {
+		margin-top: 10px;
+		padding: 0 30px;
+		text-align: center;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+
+	div.coach-steph {
+		background-color: white;
+		background-image: url(../img/stephslaton_50.jpg);
+		background-repeat: no-repeat;
+		background-position: 0px center;
+		height: 600px;
+	}
+
+	div.coach-steph .background {
+		margin: 80px 0 0 15px;
+		padding: 10px 30px 15px;
+		background-color: rgba(255, 255, 255, .7);
+		border-radius: 5px;
+	}
+
+	div.coach-steph .background p {
+		padding: 0;
+		text-align: center;
+	}
+
+	div.testimonials {
+		margin-top: 0;
+	}
+
+	div.testimonials hr {
+		display: none;
+	}
+
+	div.testimonials .row {
+		margin-top: 20px;
+	}
+
+	div.testimonials div.col-lg-4 {
+		margin-top: 0;
+	}
+}
+
