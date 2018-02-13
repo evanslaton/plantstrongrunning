@@ -51,7 +51,7 @@ h1, h2, h3 {
 	padding: 0;
 }
 
-.desktop {
+.desktop, .desktop2, .desktop-button {
 	display: none;
 }
 
@@ -82,11 +82,15 @@ div.learn-more:hover, div.learn-more:active {
 	color: #FFF;
 }
 
-.desktop {
-	display: none;
+div.learn-more:hover {
+	box-shadow: 0 0 3px #000;
 }
 
-.thematic-break {
+div.learn-more:active {
+	box-shadow: none;
+}
+
+/*.thematic-break {
 	text-align: center;
 	position: relative;
 	width: 100%;
@@ -111,11 +115,10 @@ div.learn-more:hover, div.learn-more:active {
 .thematic-break img {
 	width: 50px;
 }
-
+*/
 
 /* ========== Home Page Header ========== */
 div.header {
-	position: relative;
 	height: 300px;
 	width: 100%;
 	padding: 10px 15px;
@@ -142,13 +145,18 @@ header.homepage-header h2 {
 	margin-bottom: 15px;
 }
 
+header p.first-text {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 header em {
 	text-transform: uppercase;
 }
 
 header .header-buttons {
 	width: 300px;
-	margin: 20px auto;
+	margin: 25px auto;
 	overflow: auto;
 	padding: 0 4px 10px;
 }
@@ -157,7 +165,6 @@ header a.header-links {
 	display: inline-block;
 	border: 1px solid #414141;
 	border-radius: 5px;
-	background-color: transparent;
 	background-color: #414141;
 	text-decoration: none;
 }
@@ -188,6 +195,18 @@ header a.header-links p {
 	margin: 0;
 	padding: 5px 25px;
 	color: #FFF;
+}
+
+div.down-arrow-div {
+	display: none;
+	width: 100%;
+	margin-top: -90px;
+	margin-bottom: 40px;
+}
+
+p.down-arrow {
+	font-size: 36px;
+	animation: arrowDown 2s infinite;
 }
 
 div.form-padding {
@@ -244,6 +263,12 @@ div.why-plant-strong h2 {
 div.why-plant-strong p {
 	margin-bottom: 0;
 	padding: 0 15px;
+}
+
+div.why-plant-strong img.desktop {
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
 }
 
 div.why-plant-strong .blog-row {
@@ -310,7 +335,7 @@ hr.test-hr {
 }
 
 .swiper-container p {
-	padding: 5px 0;
+	padding: 5px 0 6px;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
@@ -459,6 +484,10 @@ img.iin-img {
 }
 
 @media screen and (min-width: 768px) {
+	h2 {
+		font-size: 38px;
+	}
+
 	div.header {
 		height: 500px;
 		background-image: url(../img/stephslaton_29.jpg);
@@ -480,9 +509,27 @@ img.iin-img {
 	}	
 
 	header.homepage-header p {
+		max-width: 386px;
 		margin-top: 10px;
 		padding: 0 30px;
 		text-align: center;
+	}
+
+	form.header-form {
+		max-width: 375px;
+	}
+
+	.sign-up {
+		font-size: 18px;
+	}
+
+	input.newsletterEmail {
+		height: 40px;
+		font-size: 18px;
+	}
+
+	input.newsletterSubmit {
+		height: 40px;
 	}
 
 	.mobile {
@@ -491,6 +538,23 @@ img.iin-img {
 
 	.desktop {
 		display: block;
+	}
+
+	div.why-plant-strong h2 {
+		margin-bottom: 0;
+	}
+
+	.why-plant-strong .first-text, .homepage-programs .first-text {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.why-plant-strong .first-text {
+		padding-left: 15px;
+	}
+
+	div.why-plant-strong {
+		padding-left: 50px;
 	}
 
 	div.coach-steph {
@@ -502,7 +566,7 @@ img.iin-img {
 	}
 
 	div.coach-steph .background {
-		margin: 80px 0 0 15px;
+		margin: 75px 0 0 15px;
 		padding: 10px 30px 15px;
 		background-color: rgba(255, 255, 255, .7);
 		border-radius: 5px;
@@ -530,3 +594,184 @@ img.iin-img {
 	}
 }
 
+@media screen and (min-width: 806px) {
+	div.why-plant-strong p.first-text {
+		padding-right: 60px;
+		margin-top: 45px;
+	}
+}
+
+@media screen and (min-width: 836px) {
+	header.homepage-header {
+		top: 270px;
+	}
+
+	header.homepage-header h1 {
+		font-size: 38px;
+	}
+
+	header.homepage-header h2 {
+		font-size: 30px;
+	}
+
+	header.homepage-header p.first-text {
+		font-size: 20px;
+	}
+
+	header .header-buttons {
+		width: 325px;
+	}
+
+	a.header-links div {
+		font-size: 18px;
+		padding: 2px;
+	}
+}
+
+@media screen and (min-width: 856px) {
+	div.why-plant-strong p.first-text {
+		margin-top: 55px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	div.header {
+		background-position: center -40px;
+	}
+
+	div.why-plant-strong p.first-text {
+		margin-top: 65px;
+	}
+}
+
+@media screen and (min-width: 926px) {
+	.desktop2 {
+		display: block;
+		padding-top: 35px;
+		padding-right: 38px;
+	}
+
+	.mobile2 {
+		display: none;
+	}
+
+	div.why-plant-strong p.first-text {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	div.header {
+		height: 600px;
+		background-position: center center;		
+	}
+
+	header.homepage-header {
+		margin-top: 60px;
+	}
+
+	div.down-arrow-div {
+		display: block;
+	}
+
+	.desktop2 {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 1030px) {
+	.desktop2 {
+		padding-top: 60px;
+	}
+
+@media screen and (min-width: 1050px) {
+	div.header {
+		background-position: center -40px;		
+	}
+}
+
+@media screen and (min-width: 1079px) {
+	.desktop2 {
+		padding-top: 45px;
+	}
+
+	div.why-plant-strong .desktop-button {
+		display: block;
+	}
+
+	div.why-plant-strong .mobile-button {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.desktop2 {
+		padding-top: 30px;
+	}
+
+	div.why-plant-strong p.first-text {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.desktop2 {
+		padding-top: 35px;
+	}
+}
+
+@media screen and (min-width: 1171px) {
+	.desktop2 {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	div.header {
+		height: 650px;
+		background-position: center -40px;		
+	}
+
+	header.homepage-header {
+		top: 280px;
+	}
+
+	header.homepage-header h1 {
+		font-size: 42px;
+	}
+
+	header.homepage-header h2 {
+		font-size: 34px;
+	}
+
+	header.homepage-header p.first-text {
+		font-size: 22px;
+		padding: 0;
+	}
+
+	div.down-arrow-div {
+		bottom: 60px;
+	}
+}
+
+@media screen and (min-width: 1320px) {
+	div.header {
+		background-position: center -60px;		
+	}
+}
+
+
+
+@keyframes arrowDown {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(0px, 10px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
