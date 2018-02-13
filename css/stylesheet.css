@@ -276,7 +276,7 @@ div.why-plant-strong .blog-row {
 }
 
 div.why-plant-strong h3 {
-	font-size: 25px;
+	font-size: 24px;
 }
 
 div.why-plant-strong div.homepage-blogs img {
@@ -295,7 +295,24 @@ p.read-more a {
 
 /* ========== Home Page Coach Stephanie ========== */
 div.coach-steph  {
+	position: relative;
 	padding-top: 30px;	
+}
+
+div.fade-to-white {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 30%;
+	background-color: #FFF;
+	background: linear-gradient(to right, #FFF, #FFF 80%, transparent);
+}
+
+div.coach-steph div.background {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 div.coach-steph p {
@@ -326,6 +343,10 @@ hr.test-hr {
 
 
 /* ========== Home Page Coaching Programs ========== */
+.homepage-programs .container {
+	padding-bottom: 1px;
+}
+
 .homepage-programs p {
 	padding: 0 15px;
 }
@@ -561,7 +582,7 @@ img.iin-img {
 		background-color: white;
 		background-image: url(../img/stephslaton_50.jpg);
 		background-repeat: no-repeat;
-		background-position: 0px center;
+		background-position: left center;
 		height: 600px;
 	}
 
@@ -594,10 +615,40 @@ img.iin-img {
 	}
 }
 
+@media screen and (min-width: 775px) {
+	div.coach-steph {
+		background-position: 10px center;
+	}
+}
+
+@media screen and (min-width: 790px) {
+	div.coach-steph {
+		background-position: 15px center;
+	}
+}
+
+@media screen and (min-width: 805px) {
+	div.coach-steph {
+		background-position: 20px center;
+	}
+}
+
 @media screen and (min-width: 806px) {
 	div.why-plant-strong p.first-text {
 		padding-right: 60px;
 		margin-top: 45px;
+	}
+}
+
+@media screen and (min-width: 820px) {
+	div.coach-steph {
+		background-position: 25px center;
+	}
+}
+
+@media screen and (min-width: 835px) {
+	div.coach-steph {
+		background-position: 30px center;
 	}
 }
 
@@ -628,9 +679,31 @@ img.iin-img {
 	}
 }
 
+@media screen and (min-width: 850px) {
+	div.coach-steph {
+		background-position: 65px center;
+	}
+
+	div.coach-steph div.background {
+		margin-left: 25px;
+	}
+}
+
 @media screen and (min-width: 856px) {
 	div.why-plant-strong p.first-text {
 		margin-top: 55px;
+	}
+}
+
+@media screen and (min-width: 865px) {
+	div.coach-steph {
+		background-position: 80px center;
+	}
+}
+
+@media screen and (min-width: 880px) {
+	div.coach-steph {
+		background-position: 95px center;
 	}
 }
 
@@ -641,6 +714,22 @@ img.iin-img {
 
 	div.why-plant-strong p.first-text {
 		margin-top: 65px;
+	}
+
+	div.coach-steph div.background {
+		margin-left: 20%;
+	}
+}
+
+@media screen and (min-width: 905px) {
+	div.coach-steph {
+		background-position: 100px center;
+	}
+}
+
+@media screen and (min-width: 920px) {
+	div.coach-steph {
+		background-position: 115px center;
 	}
 }
 
@@ -660,6 +749,18 @@ img.iin-img {
 	}
 }
 
+@media screen and (min-width: 935px) {
+	div.coach-steph {
+		background-position: 130px center;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	div.coach-steph {
+		background-position: 145px center;
+	}
+}
+
 @media screen and (min-width: 960px) {
 	div.header {
 		height: 600px;
@@ -676,6 +777,30 @@ img.iin-img {
 
 	.desktop2 {
 		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 965px) {
+	div.coach-steph {
+		background-position: 160px center;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	div.coach-steph {
+		background-position: 175px center;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	div.coach-steph {
+		background-position: 190px center;
+	}
+}
+
+@media screen and (min-width: 1020px) {
+	div.coach-steph {
+		background-position: 205px center;
 	}
 }
 
@@ -712,11 +837,27 @@ img.iin-img {
 	div.why-plant-strong p.first-text {
 		font-size: 20px;
 	}
+
+	div.coach-steph {
+		background-position: 235px center;
+	}
+}
+
+@media screen and (min-width: 1120px) {
+	div.coach-steph {
+		background-position: 260px center;
+	}
 }
 
 @media screen and (min-width: 1140px) {
 	.desktop2 {
 		padding-top: 35px;
+	}
+}
+
+@media screen and (min-width: 1160px) {
+	div.coach-steph {
+		background-position: 280px center;
 	}
 }
 
@@ -752,6 +893,18 @@ img.iin-img {
 	div.down-arrow-div {
 		bottom: 60px;
 	}
+
+	div.coach-steph {
+		background-position: right center;
+	}
+
+	div.coach-steph div.fade-to-white {
+		width: 40%;
+	}
+
+	div.coach-steph div.background {
+		margin-left: 25%;
+	}
 }
 
 @media screen and (min-width: 1320px) {
@@ -760,7 +913,12 @@ img.iin-img {
 	}
 }
 
+@media screen and (min-width: 1400px) {
+	div.coach-steph div.fade-to-white {
+		width: 50%;
+	}
 
+}
 
 @keyframes arrowDown {
     0% {

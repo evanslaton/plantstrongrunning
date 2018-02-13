@@ -138,7 +138,7 @@ footer .social-media i {
 	}
 
 	div.nav-links ul {
-		display: block;
+		display: block !important;
 		top: -41px;
 		padding: 12px 0 0;
 	}
