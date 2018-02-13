@@ -190,8 +190,7 @@ header a.header-links p {
 	color: #FFF;
 }
 
-p.sign-up {
-	clear: both;
+div.form-padding {
 	padding: 0 15px;
 }
 
