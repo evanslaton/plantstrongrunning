@@ -324,7 +324,6 @@ div.fade-to-white {
 }
 
 div.coach-steph div.background {
-	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -585,7 +584,7 @@ img.iin-img {
 		margin-bottom: 0;
 	}
 
-	.why-plant-strong .first-text, .homepage-programs .first-text {
+	.why-plant-strong .first-text, .homepage-programs .first-text, .homepage-iin p {
 		font-size: 18px;
 		text-align: center;
 	}
@@ -609,6 +608,7 @@ img.iin-img {
 	div.coach-steph .background {
 		margin: 75px 0 0 15px;
 		padding: 10px 30px 15px;
+		max-width: 400px;
 		background-color: rgba(255, 255, 255, .7);
 		border-radius: 5px;
 	}
