@@ -491,7 +491,7 @@ img.iin-img {
 
 @media screen and (min-width: 535px) {
 	div.header {
-		height: 400px;
+		height: 350px;
 		background-position: center center;
 	}
 
@@ -504,19 +504,25 @@ img.iin-img {
 	}	
 }
 
+@media screen and (min-width: 640px) {
+	div.header {
+		background-position: center -35px;
+	}
+
 @media screen and (min-width: 768px) {
 	h2 {
 		font-size: 38px;
 	}
 
 	div.header {
-		height: 500px;
+		height: 400px;
 		background-image: url(../img/stephslaton_29.jpg);
+		background-position: center -20px
 	}
 
 	header.homepage-header {
 		position: absolute;
-		top: 290px;
+		top: 195px;
 		left: 20px;
 		width: 50%;
 	}
@@ -652,33 +658,6 @@ img.iin-img {
 	}
 }
 
-@media screen and (min-width: 836px) {
-	header.homepage-header {
-		top: 270px;
-	}
-
-	header.homepage-header h1 {
-		font-size: 38px;
-	}
-
-	header.homepage-header h2 {
-		font-size: 30px;
-	}
-
-	header.homepage-header p.first-text {
-		font-size: 20px;
-	}
-
-	header .header-buttons {
-		width: 325px;
-	}
-
-	a.header-links div {
-		font-size: 18px;
-		padding: 2px;
-	}
-}
-
 @media screen and (min-width: 850px) {
 	div.coach-steph {
 		background-position: 65px center;
@@ -709,7 +688,7 @@ img.iin-img {
 
 @media screen and (min-width: 900px) {
 	div.header {
-		background-position: center -40px;
+		background-position: center -20px;
 	}
 
 	div.why-plant-strong p.first-text {
@@ -763,8 +742,7 @@ img.iin-img {
 
 @media screen and (min-width: 960px) {
 	div.header {
-		height: 600px;
-		background-position: center center;		
+		height: 500px;	
 	}
 
 	header.homepage-header {
@@ -903,7 +881,7 @@ img.iin-img {
 	}
 
 	div.coach-steph div.background {
-		margin-left: 25%;
+		margin-left: 30%;
 	}
 }
 

@@ -1,18 +1,21 @@
 /* ========== Nav Bar ========== */
 nav.navigation {
 	background-color: #414141;
-	padding: 0;
+	padding: 3px 0 0;
 	text-align: center;
 	position: relative;
-	height: 184px;
+	height: 130px;
+}
+
+nav.navigation img {
+	width: 250px !important;
 }
 
 div.nav-links {
 	width: 100%;
 	background-color: #FF6A5C;
-	padding: 8px 0;
 	position: absolute;
-	bottom: 0;
+	bottom: -12px;
 }
 
 nav i {
@@ -45,10 +48,10 @@ nav i {
 }
 
 div.nav-links ul {
-	padding: 10px 0 15px;
 	margin: 0;
 	background-color: #FF6A5C;
 	position: absolute;
+	height: 40px;
 	top: 50px;
 	left: 0;
 	right: 0;
@@ -58,7 +61,6 @@ div.nav-links ul {
 
 div.nav-links li {
 	list-style-type: none;
-	padding: 2px 0;
 }
 
 div.nav-links a {
@@ -140,31 +142,16 @@ footer .social-media i {
 	div.nav-links ul {
 		display: block !important;
 		top: -41px;
-		padding: 12px 0 0;
+		padding: 2px 0;
 	}
 
 	div.nav-links ul li {
 		display: inline-block;
-		height: 40.406px;
 		padding: 0;
 		margin: 0 20px;
 	}
 }
 
-@media screen and (min-width: 836px) {
-	div.nav-links ul li {
-		margin: 0 25px;
-}
-
-@media screen and (min-width: 900px) {
-	div.nav-links ul li {
-		margin: 0 30px;
-}
-
-@media screen and (min-width: 900px) {
-	div.nav-links ul li {
-		margin: 0 35px;
-}
 
 /* ========== Footer Social Media Icon Changes ========== */
 @media screen and (max-width: 575px) {
