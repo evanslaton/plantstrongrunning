@@ -200,8 +200,8 @@ header a.header-links p {
 div.down-arrow-div {
 	display: none;
 	width: 100%;
-	margin-top: -90px;
-	margin-bottom: 40px;
+	margin-top: -210px;
+	margin-bottom: 160px;
 }
 
 p.down-arrow {
@@ -209,8 +209,22 @@ p.down-arrow {
 	animation: arrowDown 2s infinite;
 }
 
+@keyframes arrowDown {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(0px, 10px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
 div.form-padding {
-	padding: 0 15px;
+	padding: 25px 15px;
 }
 
 form.header-form {
@@ -846,32 +860,6 @@ img.iin-img {
 }
 
 @media screen and (min-width: 1200px) {
-	div.header {
-		height: 650px;
-		background-position: center -40px;		
-	}
-
-	header.homepage-header {
-		top: 280px;
-	}
-
-	header.homepage-header h1 {
-		font-size: 42px;
-	}
-
-	header.homepage-header h2 {
-		font-size: 34px;
-	}
-
-	header.homepage-header p.first-text {
-		font-size: 22px;
-		padding: 0;
-	}
-
-	div.down-arrow-div {
-		bottom: 60px;
-	}
-
 	div.coach-steph {
 		background-position: right center;
 	}
@@ -895,19 +883,4 @@ img.iin-img {
 	div.coach-steph div.fade-to-white {
 		width: 50%;
 	}
-
-}
-
-@keyframes arrowDown {
-    0% {
-        transform: translate3d(0px, 0px, 0px);
-        animation-timing-function: ease-in;
-    }
-    50% {
-        transform: translate3d(0px, 10px, 0px);
-        animation-timing-function: ease-out;
-    }
-    100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
 }
