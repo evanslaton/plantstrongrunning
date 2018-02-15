@@ -1,0 +1,130 @@
+/*
+Matte - #414141
+Fresh - #CCDFCB
+Watermelon - #FF6A5C
+Teal - #056571
+*/
+
+/* ========== Main Section ========== */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	font-family: Abel;
+}
+
+.margin-top-10px {
+	margin-top: 10px;
+}
+
+.margin-top-20px {
+	margin-top: 20px;
+}
+
+.margin-top-26px {
+	margin-top: 26px;
+}
+
+.margin-top-30px {
+	margin-top: 30px;
+}
+
+.margin-top-40px {
+	margin-top: 40px;
+}
+
+.margin-top-60px {
+	margin-top: 60px;
+}
+
+.container-fluid {
+	background-color: white;
+	padding: 0;
+}
+
+.desktop, .desktop2, .desktop-button {
+	display: none;
+}
+
+div.button {
+	width: 100%;
+	padding: 0 15px;
+}
+
+div.button a {
+	text-decoration: none;
+}
+
+div.learn-more {
+	max-width: 300px;
+	padding-top: 6px;
+	height: 40px;
+	background-color: #414141;
+	border: 1px solid #414141;
+	color: #FFF;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.learn-more:hover, div.learn-more:active {
+	cursor: pointer;
+	background-color: #414141;
+	color: #FFF;
+}
+
+div.learn-more:hover {
+	box-shadow: 0 0 3px #000;
+}
+
+div.learn-more:active {
+	box-shadow: none;
+}
+
+
+/* ========== IIN ========== */
+div.homepage-iin {
+	background-color: #F2F2F2;
+	margin-top: 40px;
+	padding: 25px 15px 40px;
+}
+
+img.img-center {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.iin-img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+
+@media screen and (min-width: 350px) {
+	div.homepage-iin h2 {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	div.homepage-iin p {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+@media screen and (min-width: 768px) {
+	.homepage-iin p {
+		font-size: 18px;
+		text-align: center;
+	}

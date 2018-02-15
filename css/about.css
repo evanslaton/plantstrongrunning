@@ -1,0 +1,160 @@
+/* ========== About Page Styles ========== */
+div.header {
+	height: 300px;
+	width: 100%;
+	padding: 105px 0 0;
+	margin-bottom: 20px;
+	background-color: #000;
+	background-image: url(../img/about-banner.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
+	text-shadow: 1px 1px 8px #000;
+	font-size: 30px;
+	font-family: Pacifico;
+}
+
+p {
+	padding: 0 15px;
+}
+
+div.why-need-coach {
+}
+
+
+
+
+
+
+div.steph-bio {
+	background-color: #F2F2F2;
+	padding: 40px 0;
+/*	max-height: 600px;
+	overflow: hidden;*/
+}
+
+div.steph-bio div.steph-info {
+	max-height: 600px;
+}
+
+p.about-steph-text {
+	margin-bottom: 0;
+}
+
+.fade-to-grey {
+	display: none;
+}
+
+div.steph-bio img {
+
+}
+
+div.steph-bio div.certs {
+
+}
+
+div.steph-bio div.about-certs2 {
+	display: none;
+	height: 50%;
+	padding: 30px;
+}
+
+
+
+
+
+
+form.header-form {
+	position: relative;
+	margin-bottom: 40px;
+	width: 100%;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input.newsletterEmail {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #414141;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+input.newsletterSubmit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+	height: 35px;
+	background-color: #414141;
+	color: white;
+	padding: 0 15px;
+}
+
+input.newsletterSubmit:hover {
+	cursor: pointer;
+}
+
+
+@media screen and (min-width: 450px) {
+	p {	
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	div.steph-bio {
+		padding: 0;
+	}
+
+	.sm-screen {
+		display: none;
+	}
+
+	div.steph-bio div.steph-info {
+		position: relative;
+		min-height: 444px;
+		margin: 0;
+		background-image: url(../img/stephslaton_47.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: -175px top;
+	}
+
+	img.about-img {
+		display: none;
+	}
+
+	div.fade-to-grey {
+		display: block;
+		position: absolute;
+		width: 70%;
+		right: 0;
+		height: 100%;
+		background: linear-gradient(to left, #F2F2F2, #F2F2F2 70%, transparent);;
+	}
+
+	div.fade-to-grey div.background {
+		padding: 20px 25px 30px 160px;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	div.steph-bio {
+		padding: 0;
+/*		max-height: 490px;
+		overflow: hidden;*/
+
+	}
+
+	div.steph-bio div.steph-info {
+		margin: 0;
+	}
+}
