@@ -5,7 +5,7 @@ div.header {
 	padding: 105px 0 0;
 	margin-bottom: 20px;
 	background-color: #000;
-	background-image: url(../img/about-banner.jpeg);
+	background-image: url(../img/pexels-photo-326279.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -15,106 +15,116 @@ div.header {
 	font-family: Pacifico;
 }
 
+.lg-screen {
+	display: none;
+}
+
 p {
 	padding: 0 15px;
 }
 
 div.why-need-coach {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-
-
-
-
 
 div.steph-bio {
 	background-color: #F2F2F2;
-	padding: 40px 0;
-/*	max-height: 600px;
-	overflow: hidden;*/
+	padding: 40px 0 20px;
+}
+
+div.steph-bio div.row {
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 div.steph-bio div.steph-info {
 	max-height: 600px;
+	padding: 0;
 }
 
 p.about-steph-text {
 	margin-bottom: 0;
 }
 
+div.background p {
+	padding: 10px;
+}
+
 .fade-to-grey {
 	display: none;
 }
 
-div.steph-bio img {
-
-}
-
-div.steph-bio div.certs {
-
-}
-
-div.steph-bio div.about-certs2 {
+div.side-certs {
 	display: none;
-	height: 50%;
-	padding: 30px;
 }
 
+div.certs-container {
+	background-color: #F2F2F2;
+}
 
+div.certs-small {
+	background-color: #F2F2F2;
+}
 
-
-
-
-form.header-form {
-	position: relative;
-	margin-bottom: 40px;
-	width: 100%;
-	max-width: 300px;
+div.about-contact-me {
+	padding: 30px 0 10px;
+	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-input.newsletterEmail {
-	width: 100%;
-	border-radius: 5px;
-	border: 1px solid #414141;
-	height: 35px;
-	padding-left: 10px;
-	font-size: 14px;
+div.homepage-iin {
+	margin-top: 0;
 }
 
-input.newsletterSubmit {
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border: none;
-	height: 35px;
-	background-color: #414141;
-	color: white;
-	padding: 0 15px;
+@media screen and (min-width: 350px) {
+	div.button {	
+		margin-top: 40px;
+	}
 }
-
-input.newsletterSubmit:hover {
-	cursor: pointer;
-}
-
 
 @media screen and (min-width: 450px) {
 	p {	
 		padding-right: 35px;
 		padding-left: 35px;
 	}
+
+	footer p {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	p.sign-up {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	div.certs-container h3 {
+		font-size: 24px;
+	}
+
+	div.rrca-cert {	
+		margin-top: 0;
+	}
 }
 
 @media screen and (min-width: 700px) {
 	div.steph-bio {
-		padding: 0;
+		padding: 0 0 40px;
 	}
 
 	.sm-screen {
 		display: none;
+	}
+
+	.lg-screen {
+		display: block;
 	}
 
 	div.steph-bio div.steph-info {
@@ -137,24 +147,257 @@ input.newsletterSubmit:hover {
 		width: 70%;
 		right: 0;
 		height: 100%;
-		background: linear-gradient(to left, #F2F2F2, #F2F2F2 70%, transparent);;
+		background: linear-gradient(to left, #F2F2F2, #F2F2F2 70%, transparent);
 	}
 
 	div.fade-to-grey div.background {
 		padding: 20px 25px 30px 160px;
 	}
 
+	div.about-certs {
+		margin-top: 40px;
+	}
+
+	div.certs-container p {
+		padding: 5px;
+	}
+
+	div.about-contact-me-background {
+		background-color: #FFF;
+		background-image: url(../img/phone1.jpeg);
+		background-position: -100px center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	div.about-contact-fade {
+		background-color: #FFF;
+		background-color: rgba(255, 255, 255, .85);		
+	}
+
+	div.about-contact-me p {
+		text-align: center;
+	}
+
+	div.about-contact-me {
+		padding-top: 40px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	div.steph-bio div.steph-info {
+		background-position: -195px top;
+	}
+
+	div.fade-to-grey {
+		width: 70%;
+		right: 0;
+		background: linear-gradient(to left, #F2F2F2, #F2F2F2 70%, transparent);
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 180px;
+	}
+
+	div.background h2 {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	div.certs-container {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	div.about-contact-me {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	div.background h2 {
+		margin-top: 25px;
+	}
+
+	div.steph-bio div.steph-info {
+		background-position: -205px top;
+	}
+}
+
+@media screen and (min-width: 820px) {
+	div.steph-bio div.steph-info {
+		background-position: -225px top;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	div.steph-bio div.steph-info {
+		background-position: -245px top;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 200px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	div.steph-bio div.coach-steph {
+		height: 500px;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 220px;
+	}
+
+	div.background h2 {
+		margin-top: 35px;
+	}
+
+	div.background p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	div.steph-bio div.steph-info {
+		background-position: -265px top;
+	}
+
+	div.background h2 {
+		margin-top: 50px;
+	}
 }
 
 @media screen and (min-width: 992px) {
 	div.steph-bio {
-		padding: 0;
-/*		max-height: 490px;
-		overflow: hidden;*/
+		padding: 0 0 40px;
 
 	}
 
 	div.steph-bio div.steph-info {
 		margin: 0;
+	}
+
+	div.about-contact-me-background {
+		background-position: 150px center
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	div.steph-bio div.steph-info {
+		background-position: -285px top;
+	}
+
+	div.background h2 {
+		margin-top: 50px;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 240px;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	div.background h2 {
+		font-size: 40px;
+		margin-top: 30px;
+	}
+
+	div.background p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1060px) {
+	div.steph-bio div.steph-info {
+		height: 600px;
+		background-position: -250px top;
+	}
+
+	div.coach-steph {
+		height: 600px !important;
+	}
+
+	div.steph-bio div.steph-info {
+		background-position: -305px top;
+	}
+
+	div.background h2 {
+		margin-top: 70px;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 255px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	div.steph-bio div.steph-info {
+		background-position: -325px top;
+	}
+
+	div.background h2 {
+		margin-top: 75px;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 265px;
+	}
+
+	div.certs-container .row {
+		margin-top: 200px;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	div.steph-bio div.steph-info {
+		background-position: -300px top;
+	}
+
+	div.fade-to-grey {
+		width: 65%;
+		background: linear-gradient(to left, #F2F2F2, #F2F2F2 69%, transparent);
+	}
+
+	div.background h2 {
+		margin-top: 70px;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 270px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	div.steph-bio div.steph-info {
+		height: 650px;
+		background-position: -320px -35px;
+	}
+
+	div.coach-steph {
+		height: 650px !important;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 35%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	div.steph-bio div.steph-info {
+		height: 650px;
+		background-position: -390px -35px;
+	}
+
+	div.coach-steph {
+		height: 650px !important;
+	}
+
+	div.fade-to-grey div.background {
+		padding-left: 35%;
 	}
 }
