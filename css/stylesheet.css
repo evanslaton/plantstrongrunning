@@ -1,4 +1,8 @@
 /* ========== Home Page Header ========== */
+div.main-div {
+	overflow: hidden;
+}
+
 div.header {
 	height: 300px;
 	width: 100%;
@@ -257,10 +261,6 @@ hr.test-hr {
 		padding: 0 15px;
 		text-align: center;
 	}	
-	
-	p.first-text {
-		margin-top: 20px;
-	}
 
 	div.button {
 		margin-top: 40px;
@@ -293,10 +293,6 @@ hr.test-hr {
 
 	header.homepage-header h2 {
 		font-size: 28px;
-	}
-
-	p.first-text {
-		margin-top: 30px;
 	}
 
 	header.homepage-header p, div.why-plant-strong p, div.coach-steph p, div.homepage-programs p {
