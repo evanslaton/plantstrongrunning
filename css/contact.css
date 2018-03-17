@@ -1,0 +1,39 @@
+div.header {
+	background-image: url(../img/stephslaton_40.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 0;
+}
+
+
+
+@media screen and (min-width: 325px) {
+	div.header {
+		background-position: center 30%;
+	}
+}
+
+@media screen and (min-width: 535px) {
+	div.header {
+		height: 350px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	div.header {
+		height: 400px;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	div.header {
+		background-position: center 85%;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	div.header {
+		height: 500px;
+	}
+}
