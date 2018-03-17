@@ -1,0 +1,146 @@
+h2 {
+	margin: 35px auto 20px;
+	padding: 5px 0;
+}
+
+div.recent-blogs h2 {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin-bottom: 35px;
+}
+
+p {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+hr {
+	display: none;
+}
+
+div.header {
+	background-image: url(../img/blog/blog.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 0;
+}
+
+div.blog-archive {
+	background-color: #F2F2F2;
+}
+
+div.blog-archive p:last-child {
+	border-bottom: none;
+}
+
+div.blog-archive p {
+	padding: 15px 0;
+	margin: 0;
+	border-bottom: 1px solid #E0DEDE;
+}
+div.blog-archive p:last-child {
+	padding-bottom: 45px;
+}
+
+div.blog-archive p a{
+	display: block;
+}
+
+div.blog-archive p:hover {
+	font-style: italic;
+}
+
+p.read-more {
+	font-style: italic;
+}
+
+p.read-more a:hover {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+	div.form-padding p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	p {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	div.recent-blogs img {
+		border: 1px solid #000;
+	}
+
+	div.header {
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 2.3em;
+	}
+
+	div.blog-post-row {
+		padding-left: 50px;
+	}
+
+	div.recent-blogs {
+		padding-right: 45px;
+	}
+
+	div.recent-blogs hr {
+		display: block;
+		border: 1px solid #E0DEDE;
+		margin: 0;
+	}
+
+	div.blog-post-next-row {
+		margin-top: 35px;
+	}
+
+	div.blog-post-row {
+		padding-right: 50px;
+	}
+
+	div.form-padding {
+		margin-top: 50px;
+	}
+}
+
+@media screen and (min-width: 1035px) {
+	.why-plant-strong-h3 {
+		padding-top: 15px;
+		margin-bottom: 26px;
+	}	
+}
+
+@media screen and (min-width: 1084px) {
+	.eating-the-rainbow-h3 {
+		padding-top: 15px;
+		margin-bottom: 26px;
+	}	
+}
+
+@media screen and (min-width: 1150px) {
+	.why-plant-strong-h3, .eating-the-rainbow-h3 {
+		padding-top: 0;
+		margin-bottom: 8px;		
+	}
+}
+
+@media screen and (min-width: 1182px) {
+	.doctor-recommended-h3 {
+		padding-top: 15px;
+		margin-bottom: 26px;		
+	}
+}
+
+@media screen and (min-width: 1289px) {
+	.doctor-recommended-h3 {
+		padding-top: 0;
+		margin-bottom: 8px;		
+	}
+}
