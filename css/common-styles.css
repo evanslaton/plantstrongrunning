@@ -11,6 +11,14 @@ a {
 	color: black;
 }
 
+a.call-email {
+	text-decoration: none;
+}
+
+a.call-email:hover {
+	text-decoration: none;
+}
+
 a:hover {
 	color: black;
 	cursor: pointer;
