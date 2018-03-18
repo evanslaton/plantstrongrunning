@@ -68,6 +68,16 @@ p.read-more a:hover {
 	text-decoration: none;
 }
 
+img.centering-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.margin-bottom-20px {
+	margin-bottom: 20px;
+}
+
 @media screen and (min-width: 450px) {
 	div.recent-blogs p {
 		font-size: 18px;

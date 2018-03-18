@@ -151,23 +151,19 @@ input.contact-submit:active {
 	}
 }
 
+@media screen and (min-width: 860px) {
+	div.header {
+		background-position: center 30%;
+	}
+}
 
-@media screen and (min-width: 831px) {
+@media screen and (min-width: 931px) {
 	p.contact-icons {
 		display: block;
 	}
 
 	p.contact-page-info {
 		display: block;
-	}
-}
-
-
-
-
-@media screen and (min-width: 860px) {
-	div.header {
-		background-position: center 30%;
 	}
 }
 
