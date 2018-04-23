@@ -11,17 +11,18 @@ a {
 	color: black;
 }
 
+a:hover {
+	color: black;
+	cursor: pointer;
+	text-decoration: none !important;
+}
+
 a.call-email {
 	text-decoration: none;
 }
 
 a.call-email:hover {
-	text-decoration: none;
-}
-
-a:hover {
-	color: black;
-	cursor: pointer;
+	text-decoration: none !important;
 }
 
 h1, h2, h3 {
