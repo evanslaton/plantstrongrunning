@@ -78,6 +78,14 @@ img.centering-img {
 	margin-bottom: 20px;
 }
 
+a.blog-text-link {
+	color: #0000EE;
+}
+
+a.blog-text-link:hover {
+	text-decoration: underline !important;
+}
+
 @media screen and (min-width: 450px) {
 	div.recent-blogs p {
 		font-size: 18px;
