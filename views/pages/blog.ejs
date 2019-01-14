@@ -52,11 +52,11 @@
     <div id="burger-menu" class="burger-menu-border"><i class="fas fa-bars"></i></div>
 
     <ul id="nav-links">
-      <a href="../index.html"><li>Home</li></a>
-      <a href="about.html"><li>About</li></a>
-      <a href="coaching_programs.html"><li>Coaching Programs</li></a>
-      <a href="blog.html"><li>Blog</li></a>
-      <a href="contact.html"><li>Contact</li></a>      
+      <a href="/"><li>Home</li></a>
+      <a href="/about"><li>About</li></a>
+      <a href="/coaching_programs"><li>Coaching Programs</li></a>
+      <a href="/blog"><li>Blog</li></a>
+      <a href="/contact"><li>Contact</li></a>       
     </ul>
   </div>
 </nav>
@@ -67,8 +67,9 @@
 
 <div class="form-padding margin-top-30px">
   <p class="sign-up text-center">Sign up for my FREE monthly newsletter below.</p>
-  <form class="header-form">
-    <input id="emailNewsletter" class="newsletterEmail" type="text" name="emailNewsletter" placeholder="Email"/>
+  <form action="/send-email" method="POST" class="header-form">
+    <input id="emailNewsletter" class="newsletterEmail" type="email" name="emailNewsletter" placeholder="Email"/>
+    <input type="hidden" name="route" value="pages/blog" />
     <input id="submitForNewsletter" class="newsletterSubmit" type="submit" />
   </form>
 </div>
@@ -160,8 +161,9 @@
 
   <div class="form-padding margin-top-30px">
     <p class="sign-up text-center">Interested in a topic&#63; Let Coach Stephanie know what you'd like her to write about.</p>
-    <form class="header-form">
-      <input id="toWriteBlogAbout" class="newsletterEmail" type="text" name="toWriteBlogAbout" placeholder="Topic"/>
+    <form action="/send-email" method="POST" class="header-form">
+      <input id="toWriteBlogAbout" class="newsletterEmail" type="text" name="emailNewsletter" placeholder="Topic"/>
+      <input type="hidden" name="route" value="pages/blog" />
       <input id="submitToWriteBlogAbout" class="newsletterSubmit" type="submit" />
     </form>
   </div>
