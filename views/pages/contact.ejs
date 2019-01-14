@@ -52,11 +52,11 @@
     <div id="burger-menu" class="burger-menu-border"><i class="fas fa-bars"></i></div>
 
     <ul id="nav-links">
-      <a href="../index.html"><li>Home</li></a>
-      <a href="about.html"><li>About</li></a>
-      <a href="coaching_programs.html"><li>Coaching Programs</li></a>
-      <a href="blog.html"><li>Blog</li></a>
-      <a href="contact.html"><li>Contact</li></a>      
+      <a href="/"><li>Home</li></a>
+      <a href="/about"><li>About</li></a>
+      <a href="/coaching_programs"><li>Coaching Programs</li></a>
+      <a href="/blog"><li>Blog</li></a>
+      <a href="/contact"><li>Contact</li></a>       
     </ul>
   </div>
 </nav>
@@ -82,15 +82,16 @@
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <form class="contact-form">
-        <input class="text-input" type="text" placeholder="Name" />
-        <input class="text-input" type="text" placeholder="Phone" />
-        <input class="text-input" type="text" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
-        <label>
+      <form action="/send-email" method="POST" class="contact-form">
+        <input class="text-input" type="text" name="name" placeholder="Name" />
+        <input class="text-input" type="tel" name="phone" placeholder="Phone" />
+        <input class="text-input" type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message"></textarea>
+        <input type="hidden" name="route" value="pages/contact" />
+        <!-- <label>
           <input class="contact-radio" type="radio" />
           <p class="contact-radio-label">I am not a robot</p>
-        </label>
+        </label> -->
         <input class="contact-submit" type="submit" />
       </form>
     </div>

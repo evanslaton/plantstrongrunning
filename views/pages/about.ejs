@@ -51,11 +51,11 @@
     <div id="burger-menu" class="burger-menu-border"><i class="fas fa-bars"></i></div>
 
     <ul id="nav-links">
-      <a href="../index.html"><li>Home</li></a>
-      <a href="about.html"><li>About</li></a>
-      <a href="coaching_programs.html"><li>Coaching Programs</li></a>
-      <a href="blog.html"><li>Blog</li></a>
-      <a href="contact.html"><li>Contact</li></a>      
+      <a href="/"><li>Home</li></a>
+      <a href="/about"><li>About</li></a>
+      <a href="/coaching_programs"><li>Coaching Programs</li></a>
+      <a href="/blog"><li>Blog</li></a>
+      <a href="/contact"><li>Contact</li></a>        
     </ul>
   </div>
 </nav>
@@ -141,8 +141,9 @@
 
       <div class="form-padding">
         <p class="sign-up text-center">Call me <a class="call-email" href="tel:1-614-467-0421">&#40;614&#45;467&#45;0421&#41;</a> or enter your email below and start living healthy and happy today&#33;</p>
-        <form class="header-form margin-top-30px">
-          <input id="emailNewsletter" class="newsletterEmail" type="text" name="emailNewsletter" placeholder="Email"/>
+        <form action="/send-email" method="POST" class="header-form margin-top-30px">
+          <input id="emailNewsletter" class="newsletterEmail" type="email" name="emailNewsletter" placeholder="Email"/>
+          <input type="hidden" name="route" value="pages/about" />
           <input id="submitForNewsletter" class="newsletterSubmit" type="submit" />
         </form>
       </div>
