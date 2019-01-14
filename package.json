@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/evanslaton/plantstrongrunning#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "nodemailer": "^4.6.4",
     "xoauth2": "^1.2.0"
   }
